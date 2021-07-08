@@ -1,0 +1,179 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 14px/18px Arial, sans-serif;
+	height: 100%;
+	overflow-x:hidden;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.slider {
+	height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.slider-content {
+	height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slide {
+	height: 100%;
+  width: 100%;
+  display:table;
+}
+.slide > div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color:#fff;
+	text-shadow:0 1px 4px #000;
+}
+.slide > div h2 {
+	font-size: 6em;
+	line-height: 2em;
+	font-weight: bold;
+
+}
+.slide > div p {
+	font-size: 22px;
+	line-height: 1.4em;
+	font-style: italic;
+}
+
+.sl1 {
+	background: url(../img/pushkin.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sl2 {
+	background: url(../img/pushkin.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sl3 {
+	background: url(../img/pushkin.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sl4 {
+	background: url(../img/pushkin.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.more {
+	color: #fff;
+	text-decoration: none;
+	padding: 14px 23px;
+	background: #730788;
+	border: 2px solid rgb(208, 255, 0);
+	text-shadow:none;
+	line-height: 14em;
+	font-size:18px;
+	transition: .3s;
+	border-radius: 7px;
+}
+.more:hover {
+	transition: .3s;
+	background: #2c0c33c0;
+	border: 2px solid rgba(208, 255, 0, 0.315);
+}
+.slider-controls {
+	position:absolute;
+	left:0px;
+	bottom:30px;
+	text-align:center;
+	width: 100%;
+}
+.slider-controls .control-slide {
+	margin:2px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:#72078873;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+}
+.slider-controls .control-slide:hover {
+	background: #9f55ad;
+	cursor: pointer;
+}
+.slider-controls .control-slide.active {
+	background: #730788;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	width:100%;
+	padding-top:40px;
+
+}
+.content main {
+	width:1000px;
+	margin:0 auto;
+	height:auto;
+	line-height:1.4em;
+}
+.content main p {
+	margin-bottom:20px;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
